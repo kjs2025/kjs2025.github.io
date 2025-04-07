@@ -4,5 +4,11 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+### hmm
+
+blah blah blah 
+
+### misc
+<small>
+  Icons by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank">Eucalyp</a> via <a href="https://www.flaticon.com/free-icons/computer" target="_blank">Flaticon</a>
+</small>
