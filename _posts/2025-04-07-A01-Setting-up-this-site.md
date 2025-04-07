@@ -122,11 +122,45 @@ on the Pages section of the settings, the `Source` can be either from repo branc
 
 ![img-descrip](/assets/image/a01-12.PNG)
 
-Either way, 
+Either way, once Pages is enabled, whenever the owner pushes git changes to the remote branch, there should be automatically a workflow that updates the published site with the newest changes. 
+
+![img-descrip](/assets/image/a01-13.PNG)
+
+the published site can be visited at the link `username`.github.io:
+
+![img-descrip](/assets/image/a01-14.PNG)
+
+and thats really it to setting up a static site for blogging!
 
 ### personalizing the site
-### learning to write blog posts
+
+there are some great guides and examples to writing blogs with this setup at <a href="https://github.com/cotes2020/jekyll-theme-chirpy/wiki" target="_blank">here</a>
 
 ## Problems Encountered along the way
 
+When I was playing around with the code snippet syntax, I made an unchecked assumption about what languages it supported. Jekyll supports syntax highlighting through an external module called rouge. I tried stuff like `cisco-ios` and `cios` and `ciscoios` but rouge did not take any of those for language tags so I thought maybe I could dig around inside rouge and define a cisco ios language myself. 
+
+I forked rouge repo on GitHub and created my own ciscoios language definition file, but then I saw right on top of mine there was this file named `cisco_ios` with an underscore...
+
+![img-descrip](/assets/image/a01-15.PNG)
+
+I was like no way, and lo and behold, rouge did have a cisco iOS definition file after all...had I taken the time to scan through the documentation or ask chatgpt, it would not have been this awkward, but it's ok, since we get this nice syntax highlighting without having to reinvent the whole wheel:
+
+```cisco_ios
+router eigrp
+eigrp router-id 1.1.1.1
+network 10.0.0.0 0.255.255.255
+```
+
+hmm...can't wait to get started on the labs with this colorful magic
+
 ## Summary
+
+It was an interesting experience, I definitely learned new things along the way.
+
+>>> formatting tools like this
+
+> or `this`
+{: .prompt-danger }
+
+I plan to learn more about writing posts from <a href="https://github.com/cotes2020/jekyll-theme-chirpy/wiki" target="_blank">here</a>
