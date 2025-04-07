@@ -54,7 +54,7 @@ then to verify wsl status:
 
 ### setting up VS-code containerized git repo
 
-The way managing a static site works is there would be a local code base, where changes related to the site are made and posts are initially written. Then there could be a remote location where the site is published, like GitHub Pages, that periodically receive updates.
+The way managing a static site works is there would be a local code base, where changes related to the site are made and posts are initially written. Then there could be a remote location where the site is published, like GitHub Pages, that periodically receives updates.
 
 For the local code base, I went with VS-code (a code editor program) + Dev Containers extension. VS-code can be grabbed <a href="https://code.visualstudio.com/" target="_blank">here</a>. 
 
@@ -152,7 +152,7 @@ eigrp router-id 1.1.1.1
 network 10.0.0.0 0.255.255.255
 ```
 
-hmm...can't wait to get started on the labs with this colorful magic
+hmm...can't wait to get started on the labs with this colorful magic.
 
 ## Summary
 
