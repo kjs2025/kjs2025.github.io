@@ -1,5 +1,5 @@
 ---
-title:
+title: Lab Template
 date: 2025-04-07 03:58:00 America/Los_Angeles
 
 # Templates, Articles, Computer-Networking, or Programming
@@ -11,4 +11,16 @@ author: kevin
 description:
 ---
 
-and more
+## Network Topology
+
+## Problem/Task Description
+
+## Initial Inspection Of The Situation
+
+## Carrying Out The Plan
+
+## Verification
+
+## Final Thoughts
+
+
