@@ -15,6 +15,8 @@ description:
 
 ## Problem/Task Description
 
+## Preliminary Knowledge
+
 ## Initial Inspection Of The Situation
 
 ## Carrying Out The Plan
