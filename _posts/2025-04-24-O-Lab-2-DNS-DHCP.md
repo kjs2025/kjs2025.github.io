@@ -105,8 +105,32 @@ Out of curiosity, I edited the helper address like so:
 
 ## Verification
 
+Obtaining ip addr on Host C with `ipconfig /renew` cmd:
 
+![des](/assets/image/O%20Lab%202/ol02-09.png)
+
+However, a `ipconfig /all` cmd shows that the DHCP server is still `192.168.113.37`, even though on Router Beta the helper is set to `192.168.42.241`. This could be that since Router Alpha sent the response out of the point-to-point link to Router Beta, the ip addr used is `192.168.113.37`:
+
+![des](/assets/image/O%20Lab%202/ol02-10.png)
+
+![des](/assets/image/O%20Lab%202/ol02-11.png)
+
+Either way, we confirmed that Host C was able to get ip addr from Alpha. Next, we try the same on Host A/B and test for two-way connectivity by pinging Host C from Host A:
+
+![des](/assets/image/O%20Lab%202/ol02-12.png)
+_Host A_
+
+![des](/assets/image/O%20Lab%202/ol02-13.png)
+_Host B_
+
+![des](/assets/image/O%20Lab%202/ol02-14.png)
+_From Host A to Host C_
+
+There were some test records in the dns server at `192.168.42.242`. Upon pinging router alpha's hostname `router-alpha` from Host C, it shows dns is working as well:
+
+![des](/assets/image/O%20Lab%202/ol02-15.png)
+_From Host C to Router Alpha hostname_
 
 ## Final Thoughts
 
-
+Pretty standard DHCP setup, interesting experience. The relay feature is pretty cool. 
